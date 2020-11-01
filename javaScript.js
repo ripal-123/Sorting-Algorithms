@@ -14,7 +14,7 @@ const styleBar = (element, height, width, w) =>{
     element.style.width = `${(80/width) - (100/w)}%`;
     element.style.display = "inline-block";
     element.style.backgroundColor = "blue";
-    element.style.margin = `0 ${100/w}%`;
+    element.style.margin = "0 1px";
 }
 
 const resetBars = (array, size) => {
