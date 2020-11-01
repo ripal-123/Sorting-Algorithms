@@ -3,7 +3,8 @@ const algorithm = document.querySelector(".algorithnm");
 const msort = document.querySelector("#mergeSort");
 const insort = document.querySelector("#insertionSort");
 const bsort = document.querySelector("#bubbleSort");
-const slider = document.querySelector(".slider");
+const slider = document.querySelector("#myRange");
+const speed = document.querySelector("#mySpeed");
 let array = [];
 let map = new Map();
 
@@ -42,12 +43,12 @@ const doAnimation = async (item) => {
     let bar2 = document.querySelector(`#id${item[1]}`);
     bar1.style.backgroundColor = "red";
     bar2.style.backgroundColor = "red";
-    await delay(1);
+    await delay(Math.floor(101 - speed.value));
     let h1 = bar1.style.height;
     let h2 = bar2.style.height;
     bar1.style.height = h2;
     bar2.style.height = h1;
-    await delay(1);
+    await delay(101 - speed.value);
     bar1.style.backgroundColor = "blue";
     bar2.style.backgroundColor = "blue";
 }
