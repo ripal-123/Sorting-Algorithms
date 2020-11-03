@@ -11,7 +11,7 @@ let map = new Map();
 const styleBar = (element, height, width, w) =>{
     element.style.alignText =  "vertical-center";
     //element.style.padding = `${100/w}%`;
-    element.style.height = `${height}px`;
+    element.style.height = `${height}vh`;
     element.style.width = `${(80/width) - (100/w)}%`;
     element.style.display = "inline-block";
     element.style.backgroundColor = "blue";
@@ -23,7 +23,7 @@ const resetBars = (array, size) => {
     const width = window.screen.availWidth - 20;
     for(let i = 0;i<size;i++)
     {
-        array[i] = Math.floor((Math.random() * 100000)%490+5);
+        array[i] = (Math.random() * (70-1) + 1);
         let element = document.createElement("p");
         map[i]=array[i];
         element.setAttribute("id", `id${i}`);
@@ -84,7 +84,7 @@ const mergeSort = (array, l, r) => {
     for (let i = 0; i < temp.length; i++) {
         array[l + i] = temp[i];
         let bar = document.querySelector(`#id${l + i}`);
-        bar.style.height = `${array[l+i]}px`
+        bar.style.height = `${array[l+i]}vh`
     }
 }
 
