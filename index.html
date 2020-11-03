@@ -9,6 +9,7 @@
         <h1 class = "intro-main"> Sorting Vizualizer</h1>
     </header>
     <main>
+
         <div class = "algorithms">
             <button class = "algorithm" id = "quickSort">Quick Sort</button>
             <button class = "algorithm" id = "mergeSort">Merge Sort</button>
@@ -16,13 +17,22 @@
             <button class = "algorithm" id = "bubbleSort">Bubble Sort</button>
             <button class = "algorithm" id = "insertionSort">Insertion Sort</button>
         </div>
+        
         <div class="slideContainer">
+            <label for="myRange">Size Bar</label>
             <input type="range" min="5" max="200" value="100" class="slider" id="myRange">
+            <label for="mySpeed">Animation Speed</label>
             <input type="range" min="1" max="100" value="50" class="slider" id="mySpeed">
         </div>
+
         <div class = "bars">
             
         </div>
         <script  src="javaScript.js"></script>
     </main>
+    <footer>
+        <a href="https://github.com/ripal-123" id="footer">
+            <img src="./GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub-Mark">
+        </a>
+    </footer>
 </body>

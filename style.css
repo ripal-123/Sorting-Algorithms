@@ -1,28 +1,78 @@
-.intro-main{
-    padding: 20px;
+header{
+    height: 10vh;
+    position: relative;
     background-color: turquoise;
-    text-align: center;
-    margin: 0px;
-    border: 0px;
 }
+.intro-main{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 body{
     margin: 0px;
     border: 0px;
 }
-
-.algorithm{
-    border: 0ch;
-    padding: 10px;
+main {
+    height: 80vh;
+    position: relative;
+}
+.algorithms {
     background-color: greenyellow;
-    text-align: left;
-    display: inline-block;
+    text-align: center;
+    height: 5vh;
+}
+.algorithm{
+    text-align: center;
+    position: center;
+    width: 20vw;
+    background-color: greenyellow;
+    text-align: center;
+    display: block;
+    float: left;    
+    margin:0 0;
+    padding: 0 0;
 }
 .algorithm:hover {
     background-color: azure;
     color: black;
 }
 .bars{
-    border: 10px solid yellow;
+    position: relative;
     text-align: center;
-    position: top;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.slideContainer {
+    background-color:greenyellow;
+    text-align: center;
+    height: 5vh;
+
+}
+.slideContainer input {
+    margin-right: 50px;
+}
+footer {
+    background-color:black;
+    height: 10vh;
+    position : relative;
+}
+#footer {
+    margin-right: 1vw;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    float: right;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#footer img {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
 }
