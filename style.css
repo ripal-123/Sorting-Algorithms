@@ -14,66 +14,76 @@ header{
 }
 
 body{
-    margin: 0px;
-    border: 0px;
+    margin: 0;
+    border: 0;
 }
 main {
     height: 80vh;
-    position: relative;
 }
 .algorithms {
     background-color: greenyellow;
     text-align: center;
-    height: 5vh;
+    height: 70vh;
+    width: 10vw;
+    float: left;    
 }
 .algorithm{
     text-align: center;
     position: center;
-    width: 20vw;
-    height: 5vh;
+    height: 14vh;
+    width: 10vw;
     background-color: greenyellow;
     text-align: center;
-    display: block;
-    float: left;    
+    display: block;  
+    float: left;
     margin:0 0;
     padding: 0 0;
+    border: 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 .algorithm:hover {
     background-color: azure;
     color: black;
 }
+
 .bars{
-    position: relative;
+    display: inline;
+    height: 70vh;
+    bottom: 20vh;
     text-align: center;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin: 0 2vw;
 }
+
+
 .slideContainer {
+    position:absolute;
     background-color:greenyellow;
     text-align: center;
-    height: 5vh;
+    height: 10vh;
+    width: 100%;
+    bottom: 10vh;
+}
+.input {
+    height:10vh;
+    display: inline-block;
+    text-align: center;
+}
 
-}
-.slideContainer input {
-    margin-right: 50px;
-}
 footer {
-    background-color:black;
+    background-color: black;
     height: 10vh;
     position : relative;
 }
 #footer {
     margin-right: 1vw;
-    position: relative;
     text-align: center;
-    top: 50%;
     float: right;
+    top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 #footer img {
     background-color: white;
     border-radius: 50%;
-    border: 1px solid black;
 }
